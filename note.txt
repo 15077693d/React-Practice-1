@@ -1,0 +1,37 @@
+How to make a react app???
+1. install Node.js
+2. npx create react app tic-tac-toe
+
+Why is react?
+!!!
+declarative, efficient, and 
+flexible JavaScript library for building user interfaces
+
+Component
+> React.Component
+- Each Component is a class extens React.Component
+-> they return html to window
+- 1. render(){return (<html>)} 
+- 2. return React.createElement('div',{},React.createElement('h1')) 
+
+Property
+> props
+- Each Component/html property <button value=>
+- it is a object
+- you can call it by this.props
+- It is read only!
+
+State
+> state
+- It is a object , set key value to it 
+- it can edit!
+- edit by this.setState()
+
+Syntex
+- JSX
+- {} = f{} in python etc <h1>{variable}<h1/> /<button key={variable}>
+- onClick => eventListener /<button onClick={function(){...}}key={variable}>
+
+Kill app
+lsof -i :3000
+kill -9 <pid>
