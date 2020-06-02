@@ -6,7 +6,7 @@ https://reactjs.org/tutorial/tutorial.html
 ## The Code Structure Deisign:
 ![uml](https://github.com/15077693d/interactive-tic-tac-toe-game/blob/master/uml.png)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-### I should add some css later haha:>
+## I should add some css later haha:>
 ## Available Scripts
 
 In the project directory, you can run:
