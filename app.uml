@@ -1,0 +1,37 @@
+@startuml
+class Game<<component>>{
+    ==state==
+    ~ isX: boolean
+    ~ history: object[]
+    ==methods==
+    + render() : jsx
+    + isWin(currectValues:string[]) : boolean/string
+    + handleClickHistory(time:integer)
+    + handleClickBoard(i:integer,time:integer)
+}
+
+class Board<<(f,yellow)component>>{
+    ==props==
+    # time : integer
+    # handleClick : function
+    # values : string[]
+}
+
+class History<<(f,yellow)component>>{
+    ==props==
+    # key : integer
+    # time : integer
+    # handleClick : function
+}
+
+class Square<<(f,yellow)component>>{
+    ==props==
+    # key : integer
+    # handleClick : function
+    # value : string 
+    
+}
+Board "1" *-- "many"Square
+Game "1" *-- "1" Board
+Game "1" *-- "1" History
+@enduml
