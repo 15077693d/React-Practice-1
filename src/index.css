@@ -57,3 +57,32 @@ button{
 .game-info {
   margin-left: 20px;
 }
+
+@media(max-width:500px){
+  button{
+    font-size: 10px;
+    width: 100px;
+    margin-bottom: 2px;
+  }
+
+  .square {
+    margin-bottom: 0px;
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 30px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 30px;
+  }
+
+  .status {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
