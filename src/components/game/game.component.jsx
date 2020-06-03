@@ -22,16 +22,17 @@ export class Game extends React.Component {
       [0, 3, 6], [1, 4, 7],
       [2, 5, 8], [6, 4, 2]]
     let flag = false;
+    if (this.state.history.length>9){
+      flag = "No Win ..."
+    }
+    
     combinations.forEach(combination => {
       let result = currentValues[combination[0]] + currentValues[combination[1]] + currentValues[combination[2]]
       if (result === "XXX" | result === "OOO") {
         flag = "Winner "+result.slice(0,1)+" !!"
-        return flag
       }
     });
-    if (this.state.history.length>9){
-      flag = "No Win ..."
-    }
+    
     return flag
   }
 
